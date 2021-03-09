@@ -1,0 +1,78 @@
+# Migration `20201210182430-main`
+
+This migration has been generated at 12/10/2020, 2:24:30 PM.
+You can check out the [state of the schema](./schema.prisma) after the migration.
+
+## Database Steps
+
+```sql
+CREATE TABLE "movimento" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "banco" INTEGER NOT NULL
+)
+
+CREATE TABLE "pagamento" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "created_at" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "movimento_id" INTEGER NOT NULL,
+    "valor_cobrado" REAL NOT NULL,
+    "vencimento" DATETIME NOT NULL,
+    "campo_livre" TEXT,
+    "tipo_modulacao" INTEGER NOT NULL,
+    "valor_recebido" REAL,
+    "arrecadacao" INTEGER NOT NULL,
+    "forma_pagamento" INTEGER NOT NULL,
+    "estorna" INTEGER,
+
+    FOREIGN KEY ("estorna") REFERENCES "pagamento"("id") ON DELETE SET NULL ON UPDATE CASCADE,
+    FOREIGN KEY ("movimento_id") REFERENCES "movimento"("id") ON DELETE CASCADE ON UPDATE CASCADE
+)
+```
+
+## Changes
+
+```diff
+diff --git schema.prisma schema.prisma
+migration ..20201210182430-main
+--- datamodel.dml
++++ datamodel.dml
+@@ -1,0 +1,35 @@
++generator client {
++  provider = "prisma-client-js"
++}
++
++datasource db {
++  provider = "sqlite"
++  url = "***"
++}
++
++model Movimento {
++  id        Int         @id @default(autoincrement())
++  createdAt DateTime    @default(now()) @map("created_at")
++  pagamento Pagamento[]
++  banco     Int
++  @@map("movimento")
++}
++
++model Pagamento {
++  id                  Int         @id @default(autoincrement())
++  createdAt           DateTime    @default(now()) @map("created_at")
++  movimentoId         Int         @map("movimento_id")
++  valorCobrado        Float       @map("valor_cobrado")
++  vencimento          DateTime
++  campoLivre          String?     @map("campo_livre")
++  tipoModulacao       Int         @map("tipo_modulacao")
++  valorRecebido       Float?      @map("valor_recebido")
++  arrecadacao         Int
++  formaPagamento      Int         @map("forma_pagamento")
++  estorna             Int?
++  pagamentoEstornado  Pagamento?  @relation("pagamentoTopagamento_estorna", fields: [estorna], references: [id])
++  movimento           Movimento   @relation(fields: [movimentoId], references: [id])
++  pagamentoEstornador Pagamento[] @relation("pagamentoTopagamento_estorna")
++
++  @@map("pagamento")
++}
+```
+
+

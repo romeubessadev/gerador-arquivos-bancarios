@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d23f87c-b726-480e-af0c-58a5aada0712" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userStories/MovimentoDiarioUserStory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/userStories/MovimentoDiarioUserStory.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lQ79XqCnXRHgjGC4WoeQv2Q9Ra" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scap-app" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\romeu.bessa\Documents\workspace\gerador-arquivos-bancarios\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\romeu.bessa\Documents\workspace\gerador-arquivos-bancarios\src\layout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\romeu.bessa\Documents\workspace\gerador-arquivos-bancarios\src\layout\v6" />
+      <recent name="C:\Users\romeu.bessa\Documents\workspace\gerador-arquivos-bancarios\src\screens" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d23f87c-b726-480e-af0c-58a5aada0712" name="Default Changelist" comment="" />
+      <created>1607517314403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607517314403</updated>
+      <workItem from="1607517317290" duration="6000" />
+      <workItem from="1607625022318" duration="21581000" />
+      <workItem from="1607946110518" duration="14030000" />
+      <workItem from="1607968751319" duration="13133000" />
+      <workItem from="1608037893696" duration="10000" />
+      <workItem from="1609772816989" duration="22000" />
+      <workItem from="1609854680570" duration="122000" />
+      <workItem from="1609941138880" duration="1917000" />
+      <workItem from="1612959902692" duration="544000" />
+      <workItem from="1613069152521" duration="12000" />
+      <workItem from="1614262530602" duration="749000" />
+      <workItem from="1615299994951" duration="1208000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-926" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607718682323">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-926" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1607718682323" />
+    <state x="-953" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607968371841">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-953" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1607968371841" />
+    <state x="-903" y="119" key="FileChooserDialogImpl" timestamp="1609772837289">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-903" y="119" key="FileChooserDialogImpl/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1609772837289" />
+    <state x="390" y="97" width="585" height="534" key="find.popup" timestamp="1614262656989">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-976" y="97" width="585" height="534" key="find.popup/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1607979964101" />
+    <state x="390" y="97" width="585" height="534" key="find.popup/0.0.1366.728/-1366.0.1366.728@0.0.1366.728" timestamp="1614262656989" />
+    <state x="-1042" y="90" width="700" height="530" key="recent.locations.popup" timestamp="1607968629869">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1042" y="90" width="700" height="530" key="recent.locations.popup/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1607968629869" />
+    <state x="-966" y="135" key="refactoring.ChangeSignatureDialog" timestamp="1607719589306">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-966" y="135" key="refactoring.ChangeSignatureDialog/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1607719589306" />
+    <state x="-1027" y="162" key="run.anything.popup" timestamp="1607626169075">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1027" y="162" key="run.anything.popup/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1607626169075" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1613069157100">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1020" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1608036509442" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1366.0.1366.728@0.0.1366.728" timestamp="1613069157100" />
+  </component>
+</project>

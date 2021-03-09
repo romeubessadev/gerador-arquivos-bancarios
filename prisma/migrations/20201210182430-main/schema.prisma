@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url = "***"
+}
+
+model Movimento {
+  id        Int         @id @default(autoincrement())
+  createdAt DateTime    @default(now()) @map("created_at")
+  pagamento Pagamento[]
+  banco     Int
+  @@map("movimento")
+}
+
+model Pagamento {
+  id                  Int         @id @default(autoincrement())
+  createdAt           DateTime    @default(now()) @map("created_at")
+  movimentoId         Int         @map("movimento_id")
+  valorCobrado        Float       @map("valor_cobrado")
+  vencimento          DateTime
+  campoLivre          String?     @map("campo_livre")
+  tipoModulacao       Int         @map("tipo_modulacao")
+  valorRecebido       Float?      @map("valor_recebido")
+  arrecadacao         Int
+  formaPagamento      Int         @map("forma_pagamento")
+  estorna             Int?
+  pagamentoEstornado  Pagamento?  @relation("pagamentoTopagamento_estorna", fields: [estorna], references: [id])
+  movimento           Movimento   @relation(fields: [movimentoId], references: [id])
+  pagamentoEstornador Pagamento[] @relation("pagamentoTopagamento_estorna")
+
+  @@map("pagamento")
+}

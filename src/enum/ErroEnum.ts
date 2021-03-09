@@ -1,0 +1,33 @@
+const ERROS_AMBOS = {
+    VALOR_RECEBIDO_ZERO: 0,
+    DATA_PAGAMENTO_MENOR: 1,
+    CODIGO_DE_BARRAS_INVALIDO: 2,
+    VALOR_PAGAMENTO_DIFERENTE: 3
+};
+
+const ERROS_RAJADA = {
+    EXISTIR_OPERACOES_ANTERIORES: 4,
+    LINHA_IGUAL_OUTRO_ARQUIVO: 5
+};
+
+const ERROS_CONSOLIDADO = {
+    EXISTE_RAJADA_EFETIVACAO: 6,
+    SOMA_TOTAL_DIFERENTE: 7,
+    TOTAL_REGISTRO_MENOR: 8
+}
+
+class ErroEnum {
+    static getERROS_AMBOS() {
+        return ERROS_AMBOS;
+    }
+
+    static getERROS_RAJADA() {
+        return ERROS_RAJADA;
+    }
+
+    static getERROS_CONSOLIADDO() {
+        return ERROS_CONSOLIDADO;
+    }
+}
+
+export default ErroEnum

@@ -1,0 +1,646 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "CreateSource",
+      "source": "db"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Source",
+        "source": "db"
+      },
+      "argument": "provider",
+      "value": "\"sqlite\""
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Source",
+        "source": "db"
+      },
+      "argument": "url",
+      "value": "\"***\""
+    },
+    {
+      "tag": "CreateModel",
+      "model": "Movimento"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Movimento",
+      "field": "id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Movimento",
+          "field": "id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Movimento",
+          "field": "id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Movimento",
+          "field": "id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Movimento",
+      "field": "createdAt",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Movimento",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Movimento",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "now()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Movimento",
+          "field": "createdAt"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Movimento",
+          "field": "createdAt"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"created_at\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Movimento",
+      "field": "pagamento",
+      "type": "Pagamento",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Movimento",
+      "field": "banco",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "Movimento"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Model",
+          "model": "Movimento"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"movimento\""
+    },
+    {
+      "tag": "CreateModel",
+      "model": "Pagamento"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "id"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "id"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "createdAt",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "now()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "createdAt"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "createdAt"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"created_at\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "movimentoId",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "movimentoId"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "movimentoId"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"movimento_id\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "valorCobrado",
+      "type": "Float",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "valorCobrado"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "valorCobrado"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"valor_cobrado\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "vencimento",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "campoLivre",
+      "type": "String",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "campoLivre"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "campoLivre"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"campo_livre\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "tipoModulacao",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "tipoModulacao"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "tipoModulacao"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"tipo_modulacao\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "valorRecebido",
+      "type": "Float",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "valorRecebido"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "valorRecebido"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"valor_recebido\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "arrecadacao",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "formaPagamento",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "formaPagamento"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "formaPagamento"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"forma_pagamento\""
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "estorna",
+      "type": "Int",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "pagamentoEstornado",
+      "type": "Pagamento",
+      "arity": "Optional"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "pagamentoEstornado"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "pagamentoEstornado"
+        },
+        "directive": "relation"
+      },
+      "argument": "",
+      "value": "\"pagamentoTopagamento_estorna\""
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "pagamentoEstornado"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[estorna]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "pagamentoEstornado"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "movimento",
+      "type": "Movimento",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "movimento"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "movimento"
+        },
+        "directive": "relation"
+      },
+      "argument": "fields",
+      "value": "[movimentoId]"
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "movimento"
+        },
+        "directive": "relation"
+      },
+      "argument": "references",
+      "value": "[id]"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Pagamento",
+      "field": "pagamentoEstornador",
+      "type": "Pagamento",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "pagamentoEstornador"
+        },
+        "directive": "relation"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Pagamento",
+          "field": "pagamentoEstornador"
+        },
+        "directive": "relation"
+      },
+      "argument": "",
+      "value": "\"pagamentoTopagamento_estorna\""
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Model",
+          "model": "Pagamento"
+        },
+        "directive": "map"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Model",
+          "model": "Pagamento"
+        },
+        "directive": "map"
+      },
+      "argument": "",
+      "value": "\"pagamento\""
+    }
+  ]
+}
